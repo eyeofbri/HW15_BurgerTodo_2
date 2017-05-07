@@ -1,0 +1,164 @@
+body{
+  font-family: sans-serif;
+  padding: 0; margin:0;
+  background-color: #ccc;
+}
+
+
+
+header{
+  position: relative;
+  text-align: center;
+  width:100vw;
+  font-family: "Arial Black", Gadget, sans-serif;
+  background-color: black;
+  font-size: 5vw;
+  color: white; 
+}
+#burgerIcon{
+  height: 300px;
+  background-color: #f7f7f7;
+  background-image: url("burger.jpg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+section{
+  display: flex;
+  align-items: top-center;
+  justify-content: center;
+  text-align: center;
+}
+ul{
+  margin:0;
+  /*width:75%;*/
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding: 20px 0;
+}
+li{
+  list-style-type: none;
+  padding: 10px 0;
+  letter-spacing: .05vmin;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+li:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.unEaten-list{
+  width: 50%;
+  color: rgb(206,72,71);
+  background-color: rgb(255, 204, 0);
+  padding-top: 20px;
+} 
+.eaten-list{
+  width: 50%;
+  background-color: rgb(206,72,71);
+  color: rgb(255, 204, 0);
+  padding-top: 20px;
+}
+.unEaten-list:before, 
+.eaten-list:before{
+  content: "Envisioned";
+  background-color: #ccc;
+  color:#333;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 3vw;
+  border: 1px solid #333;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+}
+.eaten-list:before{
+  content: "Devoured";
+}
+
+
+
+
+span{
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 3vw;
+}
+
+.complete-b{
+  background-color: #fff;
+  font-size: 2.5vw;
+  border: 0px solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.complete-b:hover{
+  background-color: rgb(206,72,71);
+  color: white;
+}
+
+
+
+h2{
+  padding:0;
+  /*padding-top: 50px;*/
+  margin:0;
+  margin-top:30px;
+  position: relative;
+  text-align: center;
+  width:100vw;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 3vw;
+  color: 000; 
+}
+footer{
+  background-color: #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+footer form div{
+  padding-top: 20px;
+  font-size: 2vw;
+}
+footer form div input{
+  border-radius: 10px;
+}
+
+footer form div div{
+  display: flex;
+  justify-content: center;
+}
+.eatenYet{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0,0,0,0.2);
+}
+input{
+  border: 1px solid #333;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 2vw;
+}
+.add-b{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(31, 122, 31);
+  border: 2px solid #000;
+  color: #fff;
+  font-size: 2.5vw;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 5px 20px;
+  width: 90%;
+  max-width: 400px;
+}
+.add-b:hover{
+  background-color: rgb(41, 163, 41);
+  text-shadow: 1px 1px 3px #000;
+}

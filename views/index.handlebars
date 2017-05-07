@@ -1,0 +1,55 @@
+<section>
+
+  <div class="unEaten-list">
+    <ul>
+      {{#each todos }}
+        {{#unless this.complete}}
+          
+          <li>
+            <span>{{text}} &ensp;</span>
+            <form action="/api/todos/{{this.id}}?" method="POST">
+              <input type="hidden" name="eaten" value="false">
+              <button class="complete-b" type="submit">Eat it!</button>
+            </form>
+
+          </li>
+
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="eaten-list">
+    <ul>
+      {{#each todos }}
+
+        {{#if this.complete}}
+          <li>
+            <span>{{text}}</span>
+          </li>
+        {{/if}}
+
+      {{/each}}
+    </ul>
+  </div>
+
+</section>
+
+
+<footer>
+  <h2>ADD MORE FOOD</h2>
+
+  <form class="create-update-form" action="/api/todos/new" method="POST">
+
+    <div class="form-group">
+      <label for="bu">Burger Description:</label>
+      <input type="text" id="bu" name="name">
+    </div>
+
+    <button type="submit" class="add-b">Add New Burger</button>
+  </form>
+</footer>
+
+
+
+
